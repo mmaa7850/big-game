@@ -1,28 +1,28 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light" id="ShopNavBar">
     <div class="container-fluid">
-      <router-link class="navbar-brand me-0" to="/BigGame/index">
+      <router-link class="navbar-brand me-0" to="/index">
         <img src="~@/assets/images/logo.svg" alt="" style="height: 40px" />
       </router-link>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="d-flex justify-content-center">
           <li class="nav-item">
-            <router-link to="/BigGame/index#news">
+            <router-link to="/index#news">
               <div class="nav-link">{{ $t('NavBar.info') }}</div>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/BigGame/index#info">
+            <router-link to="/index#info">
               <div class="nav-link">{{ $t('NavBar.company-info') }}</div>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/BigGame/index#branch">
+            <router-link to="/index#branch">
               <div class="nav-link">{{ $t('NavBar.branch') }}</div>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/BigGame/shop">
+            <router-link to="/shop">
               <div class="nav-link"><span>{{ $t('NavBar.online') }}</span>{{ $t('NavBar.shop') }}</div>
             </router-link>
           </li>
@@ -108,7 +108,7 @@ export default {
   methods: {
     EmptyCart () {
       if (this.cartLength === 0) {
-        this.$router.push('/BigGame/cart')
+        this.$router.push('/cart')
       }
     }
   },

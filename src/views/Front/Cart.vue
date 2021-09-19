@@ -122,12 +122,12 @@
         <div class="cartToShopBtn">
           <ul>
             <li>
-              <router-link to="/BigGame/detail" class="btn btn-lg btn-active w-100" v-if="cartLength > 0">
+              <router-link to="/detail" class="btn btn-lg btn-active w-100" v-if="cartLength > 0">
                 <span class="btnInner">{{ $t('Cart.toDetail') }}</span>
               </router-link>
             </li>
             <li>
-              <a href="#/BigGame/shop" class="btn btn-lg btnToShop w-100">
+              <a href="#/shop" class="btn btn-lg btnToShop w-100">
                 <span class="btnInner">{{ $t('Cart.toShop') }}</span>
               </a>
             </li>

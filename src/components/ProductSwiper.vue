@@ -14,7 +14,7 @@
       class="ProductSwiper"
     >
       <div class="row g-4 pt-4">
-        <a :href="`#/BigGame/products/${item.id}`" class="product_Card_Togo">
+        <a :href="`#/products/${item.id}`" class="product_Card_Togo">
           <div class="col">
             <div class="card mb-4">
               <img :src="item.imageUrl" class="card-img-top" alt="" />
@@ -96,7 +96,7 @@ export default {
   },
   methods: {
     getProduct (id) {
-      this.$router.push(`/BigGame/products/${id}`)
+      this.$router.push(`/products/${id}`)
     }
   },
   created () {

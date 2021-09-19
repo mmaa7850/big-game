@@ -6,17 +6,17 @@
      class="IndexSwiper"
   >
     <swiper-slide>
-      <router-link to="/BigGame/products/-MhRhRiVg2S0bNIkCSGW">
+      <router-link to="/products/-MhRhRiVg2S0bNIkCSGW">
       <div class="banner-01"></div>
       </router-link>
     </swiper-slide>
     <swiper-slide>
-      <router-link to="/BigGame/products/-MhRkUDBRg3LIJ4iI5ka">
+      <router-link to="/products/-MhRkUDBRg3LIJ4iI5ka">
       <div class="banner-02"></div>
       </router-link>
     </swiper-slide>
     <swiper-slide>
-      <router-link to="/BigGame/products/-MhqXHGkgXZ2onXAISAz">
+      <router-link to="/products/-MhqXHGkgXZ2onXAISAz">
       <div class="banner-03"></div>
       </router-link>
     </swiper-slide>

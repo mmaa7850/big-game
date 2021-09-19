@@ -193,7 +193,7 @@ export default {
       })
     },
     getProduct (id) {
-      this.$router.push(`/BigGame/products/${id}`)
+      this.$router.push(`/products/${id}`)
     },
     getCart () {
       const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/cart`

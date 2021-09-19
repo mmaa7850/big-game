@@ -45,7 +45,7 @@
           <div class="col-7 col-md-9">
             <ul>
               <li>
-                <a href="#/BigGame/index" class="fw-bold">{{ $t('Index.important-news-contentFirst') }}<span class="text-danger">{{ $t('Index.important-news-contentTime') }}</span>{{ $t('Index.important-news-contentLast') }} <span class="text-decoration-underline underline">{{ $t('Index.important-news-contentLast-line') }}</span></a>
+                <a href="#/index" class="fw-bold">{{ $t('Index.important-news-contentFirst') }}<span class="text-danger">{{ $t('Index.important-news-contentTime') }}</span>{{ $t('Index.important-news-contentLast') }} <span class="text-decoration-underline underline">{{ $t('Index.important-news-contentLast-line') }}</span></a>
               </li>
             </ul>
           </div>
@@ -92,7 +92,7 @@
               <p class="pt-4">{{ $t('Index.company-info-top') }}</p>
               <p>{{ $t('Index.company-info-down') }}</p>
             </div>
-            <router-link to="/BigGame/index#info" class="text-primary">{{ $t('Index.company-info') }}</router-link>
+            <router-link to="/index#info" class="text-primary">{{ $t('Index.company-info') }}</router-link>
           </div>
           <div class="col-12 col-md-6 p-0">
             <div class="Nintendo-tokyo"></div>
@@ -114,48 +114,48 @@
           <div class="col-4">
             <ul>
               <li>
-                <router-link to="/BigGame/index#branch">秋葉原本店</router-link>
+                <router-link to="/index#branch">秋葉原本店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">有楽町店</router-link>
+                <router-link to="/index#branch">有楽町店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">赤坂見附駅店</router-link>
+                <router-link to="/index#branch">赤坂見附駅店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">セレクト六本木駅店</router-link>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <ul>
-              <li>
-                <router-link to="/BigGame/index#branch">渋谷東口店</router-link>
-              </li>
-              <li>
-                <router-link to="/BigGame/index#branch">日本橋三越</router-link>
-              </li>
-              <li>
-                <router-link to="/BigGame/index#branch">セレクト原宿店</router-link>
-              </li>
-              <li>
-                <router-link to="/BigGame/index#branch">聖蹟桜ヶ丘駅店</router-link>
+                <router-link to="/index#branch">セレクト六本木駅店</router-link>
               </li>
             </ul>
           </div>
           <div class="col-4">
             <ul>
               <li>
-                <router-link to="/BigGame/index#branch">JR八王子駅店</router-link>
+                <router-link to="/index#branch">渋谷東口店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">立川店</router-link>
+                <router-link to="/index#branch">日本橋三越</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">町田店</router-link>
+                <router-link to="/index#branch">セレクト原宿店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">横浜西口店</router-link>
+                <router-link to="/index#branch">聖蹟桜ヶ丘駅店</router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <router-link to="/index#branch">JR八王子駅店</router-link>
+              </li>
+              <li>
+                <router-link to="/index#branch">立川店</router-link>
+              </li>
+              <li>
+                <router-link to="/index#branch">町田店</router-link>
+              </li>
+              <li>
+                <router-link to="/index#branch">横浜西口店</router-link>
               </li>
             </ul>
           </div>
@@ -164,44 +164,44 @@
           <div class="col-6">
             <ul>
               <li>
-                <router-link to="/BigGame/index#branch">秋葉原本店</router-link>
+                <router-link to="/index#branch">秋葉原本店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">有楽町店</router-link>
+                <router-link to="/index#branch">有楽町店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">赤坂見附駅店</router-link>
+                <router-link to="/index#branch">赤坂見附駅店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">セレクト六本木駅店</router-link>
+                <router-link to="/index#branch">セレクト六本木駅店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">渋谷東口店</router-link>
+                <router-link to="/index#branch">渋谷東口店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">日本橋三越</router-link>
+                <router-link to="/index#branch">日本橋三越</router-link>
               </li>
             </ul>
           </div>
           <div class="col-6">
             <ul>
               <li>
-                <router-link to="/BigGame/index#branch">セレクト原宿店</router-link>
+                <router-link to="/index#branch">セレクト原宿店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">聖蹟桜ヶ丘駅店</router-link>
+                <router-link to="/index#branch">聖蹟桜ヶ丘駅店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">JR八王子駅店</router-link>
+                <router-link to="/index#branch">JR八王子駅店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">立川店</router-link>
+                <router-link to="/index#branch">立川店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">町田店</router-link>
+                <router-link to="/index#branch">町田店</router-link>
               </li>
               <li>
-                <router-link to="/BigGame/index#branch">横浜西口店</router-link>
+                <router-link to="/index#branch">横浜西口店</router-link>
               </li>
             </ul>
           </div>
@@ -213,7 +213,7 @@
           <div class="col-md-12 toshop-Img d-flex align-items-end justify-content-center">
             <div class="box text-center">
               <h2 class="text-warning">{{ $t('Index.online-shop') }}</h2>
-              <router-link to="/BigGame/shop" class="btn btn-outline-primary btn-lg text-white">{{ $t('Index.GotoShop') }}</router-link>
+              <router-link to="/shop" class="btn btn-outline-primary btn-lg text-white">{{ $t('Index.GotoShop') }}</router-link>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default {
     },
     EmptyCart () {
       if (this.cartLength === 0) {
-        this.$router.push('/BigGame/cart')
+        this.$router.push('/cart')
       }
     }
   },

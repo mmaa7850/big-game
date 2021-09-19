@@ -67,7 +67,7 @@
             >{{ $t('Order.toPaid') }}</a
           >
         <a
-            href="#/BigGame/shop"
+            href="#/shop"
             class="btn toShopBtn"
             v-else
             >{{ $t('Cart.toShop') }}</a

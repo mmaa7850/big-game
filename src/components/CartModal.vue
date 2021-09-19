@@ -4,7 +4,7 @@
       <ul class="top-account-cart-list">
         <li v-for="item in cart.carts" :key="item">
           <a
-            :href="`#/BigGame/products/${item.product.id}`"
+            :href="`#/products/${item.product.id}`"
             class="d-flex align-items-center"
           >
             <figure class="mb-0">
@@ -30,7 +30,7 @@
         <li class="top-account-cart-total-price">NT ${{ $filters.currency(cart.total) }} 円</li>
       </ul>
       <p class="top-account-cart-link mb-0">
-        <router-link to="/BigGame/cart" class="top-account-cart-link-a text-center">
+        <router-link to="/cart" class="top-account-cart-link-a text-center">
           <span>{{ $t('CartModal.cart') }}</span>
         </router-link>
       </p>

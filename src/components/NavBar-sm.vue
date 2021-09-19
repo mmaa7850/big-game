@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light" :class="{'bg-dark' : isShow === true | isSlide === true}" id="navbar">
     <div class="container-fluid px-0">
-      <router-link class="navbar-brand me-0 ps-2" to="/BigGame/index">
+      <router-link class="navbar-brand me-0 ps-2" to="/index">
         <img v-if="isShow" src="~@/assets/images/logo-sm_white.svg" alt="" style="height:40px">
         <img v-else-if="isSlide" src="~@/assets/images/logo-sm_white.svg" alt="" style="height:40px">
         <img v-else src="~@/assets/images/logo-sm.svg" alt="" style="height:40px">
@@ -18,7 +18,7 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/BigGame/cart" class="px-2" id="cart">
+              <router-link to="/cart" class="px-2" id="cart">
                 <img v-if="isShow" src="~@/assets/images/shopping-cart_white.svg" alt="">
                 <img v-else-if="isSlide" src="~@/assets/images/shopping-cart_white.svg" alt="">
                 <img v-else src="~@/assets/images/shopping-cart.svg" alt="">
@@ -56,22 +56,22 @@
           "
         >
           <li class="nav-item">
-            <router-link to="/BigGame/index#news">
+            <router-link to="/index#news">
               <div class="nav-link">{{ $t('NavBar.info') }}</div>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/BigGame/index#info">
+            <router-link to="/index#info">
               <div class="nav-link">{{ $t('NavBar.company-info') }}</div>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/BigGame/index#branch">
+            <router-link to="/index#branch">
               <div class="nav-link">{{ $t('NavBar.branch') }}</div>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/BigGame/shop" class="nav-link">{{ $t('NavBar.online-shop') }}</router-link>
+            <router-link to="/shop" class="nav-link">{{ $t('NavBar.online-shop') }}</router-link>
           </li>
           <li class="nav-item row">
             <div class="col-6 px-0">

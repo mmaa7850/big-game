@@ -1,20 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <ToastMessage></ToastMessage>
+  <router-view/>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import emitter from '@/methods/emitter'
+import ToastMessage from '@/components/ToastMessages.vue'
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    ToastMessage
   },
-  created () {
+  provide () {
+    return {
+      emitter
+    }
   }
 }
 </script>

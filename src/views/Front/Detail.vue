@@ -102,7 +102,7 @@
         </div>
         <div class="text-end">
           <a
-            href="#/BigGame/cart"
+            href="#/cart"
             class="btn btn-outline-primary me-3 backBtn"
             >{{ $t('Detail.backToCart') }}</a
           >
@@ -192,7 +192,7 @@ export default {
       this.$http.post(api, { data: order }).then((res) => {
         console.log(res)
         this.isLoading = false
-        this.$router.push(`/BigGame/order/${res.data.orderId}`)
+        this.$router.push(`/order/${res.data.orderId}`)
       })
     }
   },

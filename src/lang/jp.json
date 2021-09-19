@@ -1,0 +1,90 @@
+{
+  "Index": {
+    "login": "ログイン",
+    "cart": "お買いものかご",
+    "important-news": "重要なお知らせ",
+    "important-news-contentFirst": "一部店舗で",
+    "important-news-contentTime": "時短営業・休業",
+    "important-news-contentLast": "しております。ご了承ください。詳細は",
+    "important-news-contentLast-line": "こちら",
+    "news-title": "キャンペーン",
+    "news-content-1": "楽天ペイと楽天ポイントカードを使って抽選で最大50％ポイント還元キャンペーン！",
+    "news-content-2": "【J-Coin】上限10000円 5％ボーナスキャンペーン",
+    "news-content-3": "dポイントがつかえる・たまる",
+    "company-info-top": "ビッグゲームは平成20年、東京・秋葉原に",
+    "company-info-down": "おいて創業いたしました。",
+    "company-info": "会社概要を見る",
+    "branch": "店舗一覧",
+    "online-shop": "ビッグゲームネットショップ",
+    "GotoShop": "ネットショップを見る"
+  },
+  "NavBar": {
+    "info": "お知らせ",
+    "company-info": "企業情報",
+    "branch": "店舗一覧",
+    "online-shop": "ネットショップ",
+    "online": "ネット",
+    "shop": "ショップ",
+    "login": "ログイン",
+    "cart": "お買いものかご"
+  },
+  "CartModal": {
+    "cart": "お買いものかごを見る"
+  },
+  "Shop": {
+    "online-shop": "ネットショップ",
+    "all": "すべて"
+  },
+  "Product": {
+    "product-info": "商品情報",
+    "product-button": "お買い物かごに追加",
+    "shopping-info": "返品・交換について",
+    "shopping-content": "お客様のご都合による返品・交換はお受けいたしかねますので、あらかじめご了承ください",
+    "delivery-info": "配達について",
+    "delivery-content": "配送方法は全て宅配便を利用致します。マークされた商品以外全て常温便でございます。お届け時ご不在だった場合、翌日にまた再配送致します。2回以上不在の場合は、お電話とE-MAILでご連絡させて頂きます。ご連絡取れなかった際に当注文はキャンセルさせて、ご返金致します。",
+    "deliveryTime-info": "配達時間について",
+    "deliveryTime-content": "年中無休、国内24時間内お届け致します。"
+  },
+  "ProductSwiper": {
+    "title": "おすすめ商品",
+    "Swiper-button": "商品を見る"
+  },
+  "Cart": {
+    "step-title-1": "お買い物かご",
+    "step-title-2": "ご注文内容の入力",
+    "step-title-3": "ご注文完了",
+    "cart": "お買い物かご",
+    "del": "消除",
+    "mobileTitle": "お買い物かごに商品が入っていません。",
+    "toDetail": "ご注文手続きに進む",
+    "toShop": "他の商品を探す"
+  },
+  "Detail": {
+    "formTitle": "ご注文内容の入力",
+    "name": "お名前",
+    "tel": "電話番号",
+    "email": "Email",
+    "address": "お届け先",
+    "note": "連絡事項",
+    "listTitle": "ご注文商品",
+    "listPrice": "総合計金額",
+    "backToCart": "お買い物かごへ戻る",
+    "toCheckout": "確定する"
+  },
+  "Order": {
+    "title": "ご注文いただき誠にありがとうございます！",
+    "tableTitle": "こちらは発注書でございます",
+    "createTime": "注文時点",
+    "name": "お名前",
+    "tel": "お電話番号",
+    "address": "お届け先",
+    "note": "連絡事項",
+    "is_paid": "支払いステータス",
+    "not_paid": "未支払い",
+    "paid": "支払い済",
+    "toPaid": "ご購入手続き"
+  },
+  "Footer": {
+    "tel": "問い合わせ"
+  }
+}

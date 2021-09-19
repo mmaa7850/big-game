@@ -1,4 +1,4 @@
-# big-game
+# BigGame
 
 ## Project setup
 ```

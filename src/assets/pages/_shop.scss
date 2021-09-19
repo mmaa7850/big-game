@@ -1,0 +1,65 @@
+.shop {
+  padding-top: 100px;
+  @include Desktops() {
+    padding-top: 75px;
+  }
+  .products_select {
+    padding: 0px 30px;
+    @include Desktops() {
+      padding: 0px 12px;
+    }
+  }
+}
+.product_big {
+  width: 100%;
+  background-color: rgba($color: #FFFFFF, $alpha: 1);
+  border-radius: 10px;
+  &:hover {
+    color: #B30000;
+  }
+  &:hover > .img_wrap{
+    opacity: 0.7;
+  }
+  & .img_wrap {
+    width: calc(50% - 6px);
+    transition: all .3s ease;
+    & img {
+      padding: 10px;
+    }
+  }
+  & .product_description {
+    width: calc(50% + 6px);
+    & .product_description_inner {
+      width: 70%;
+      text-align: left;
+      & h3 {
+        font-size: 26px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+      }
+      & p {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #222;
+      }
+    }
+  }
+}
+.card_Togo {
+  & .card {
+    transition: all .3s ease;
+  }
+  & .card-img-top {
+    opacity: 1;
+  }
+  &:hover .card-img-top {
+    opacity: 0.7;
+  }
+  &:hover .card {
+    transform: scale(1.05);
+    // box-shadow: 0 0 0 5px #fafafa inset;
+  }
+  &:hover {
+    color: #B30000;
+  }
+}

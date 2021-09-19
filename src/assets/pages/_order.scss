@@ -1,0 +1,16 @@
+.order {
+  padding-top: 100px;
+  min-height: calc(100vh - 176px);
+  & h3 {
+    color: #B30000;
+  }
+  & .orderList {
+    margin-top: 38px;
+  }
+}
+.orderTable th {
+  font-weight: normal;
+}
+.orderTable td {
+  font-weight: 700;
+}

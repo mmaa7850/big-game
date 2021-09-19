@@ -1,0 +1,30 @@
+body {
+  font-family: HonMinSink-Book JIS2004,serif;
+  background-color: #fafafa;
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0px;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.visible {
+  opacity: 0;
+}

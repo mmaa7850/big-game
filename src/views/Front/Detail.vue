@@ -182,7 +182,6 @@ export default {
         this.cart = res.data.data
         this.cartLength = this.cart.carts.length
         this.isLoading = false
-        console.log(this.cart)
       })
     },
     createOrder () {
@@ -190,7 +189,6 @@ export default {
       const order = this.form
       this.isLoading = true
       this.$http.post(api, { data: order }).then((res) => {
-        console.log(res)
         this.isLoading = false
         this.$router.push(`/order/${res.data.orderId}`)
       })

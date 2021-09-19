@@ -39,7 +39,6 @@ export default {
     const { locale } = useI18n()
     const handleChangeLanguage = (e) => {
       locale.value = e.target.getAttribute('id')
-      console.log(locale.value)
     }
     return {
       handleChangeLanguage

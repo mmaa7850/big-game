@@ -70,7 +70,6 @@ export default {
       this.isLoading = true
       this.$http.get(api).then((res) => {
         this.isLoading = false
-        console.log(res.data)
         this.products = res.data.products
         this.pagination = res.data.pagination
       })
@@ -99,7 +98,6 @@ export default {
       this.isLoading = true
       this.$http[httpMethod](api, { data: this.tempProduct }).then((res) => {
         this.isLoading = false
-        console.log(res)
         productComponent.hideModal()
         if (res.data.success) {
           this.getProducts()

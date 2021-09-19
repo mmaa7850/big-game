@@ -169,7 +169,6 @@ export default {
         this.cart = res.data.data
         this.cartLength = this.cart.carts.length
         this.isLoading = false
-        console.log(this.cart)
       })
     },
     delCart (id) {
@@ -190,7 +189,6 @@ export default {
         qty: item.qty
       }
       this.$http.put(url, { data: cart }).then((res) => {
-        console.log(res)
         // this.status.loadingItem = ''
         this.getCart()
       })

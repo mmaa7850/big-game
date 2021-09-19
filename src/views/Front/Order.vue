@@ -140,7 +140,6 @@ export default {
         if (res.data.success) {
           this.isLoading = false
           this.order = res.data.order
-          console.log(this.order)
         }
       })
     },
@@ -154,7 +153,6 @@ export default {
     }
   },
   created () {
-    console.log(this.$route.params.id)
     this.getOrder()
   }
 }

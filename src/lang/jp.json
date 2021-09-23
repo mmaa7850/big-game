@@ -14,6 +14,8 @@
     "company-info-top": "ビッグゲームは平成20年、東京・秋葉原に",
     "company-info-down": "おいて創業いたしました。",
     "company-info": "会社概要を見る",
+    "companyImg-info-top": "僕達の冒険",
+    "companyImg-info-down": "一緒に行きませんか",
     "branch": "店舗一覧",
     "online-shop": "ビッグゲームネットショップ",
     "GotoShop": "ネットショップを見る"
@@ -86,5 +88,9 @@
   },
   "Footer": {
     "tel": "問い合わせ"
+  },
+  "Login": {
+    "login": "ログイン",
+    "password": "パスワード"
   }
 }

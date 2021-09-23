@@ -36,7 +36,7 @@
                   <span>{{item.product.title}}</span>
                 </div>
                 <div class="cartBasketCard-price my-auto">
-                  <span>NT ${{ $filters.currency(item.total) }}円</span>
+                  <span>NT ${{ $filters.currency(item.total) }}元</span>
                 </div>
                 <div class="cartBasketCard-productNum is-desktop">
                   <div class="cartBasketCard-select">
@@ -100,12 +100,12 @@
               <div class="col-md-3 subTotal-price" v-if="cart.final_total === cart.total">
                 <span>小計 </span>
                 NT $ <strong>{{ $filters.currency(cart.total) }}</strong>
-                円
+                元
               </div>
               <div class="col-md-3 subTotal-price" v-else>
                 <span>小計 </span>
                 NT $ <strong class="text-success">{{ $filters.currency(cart.final_total) }}</strong>
-                円
+                元
               </div>
             </div>
           </div>

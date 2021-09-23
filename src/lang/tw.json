@@ -14,6 +14,8 @@
     "company-info-top": "Big Game創立於於2008年",
     "company-info-down": " 東京秋葉原。",
     "company-info": "企業簡介",
+    "companyImg-info-top": "不跟我們",
+    "companyImg-info-down": "一起去冒險嗎",
     "branch": "分店一覧",
     "online-shop": "Big Game Online Shop",
     "GotoShop": "前往 Online Shop"
@@ -86,5 +88,9 @@
   },
   "Footer": {
     "tel": "聯絡電話"
+  },
+  "Login": {
+    "login": "登入",
+    "password": "密碼"
   }
 }

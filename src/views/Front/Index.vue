@@ -99,16 +99,16 @@
           </div>
           <div class="col-12 d-flex justify-content-center align-items-center info-img">
             <div class="info-text text-center">
-              <span>僕達の冒険</span>
+              <span>{{ $t('Index.companyImg-info-top') }}</span>
               <br>
-              <span>一緒に行きませんか</span>
+              <span>{{ $t('Index.companyImg-info-down') }}</span>
             </div>
           </div>
         </div>
       </section>
       <!-- branch -->
       <section class="branch mt-5 text-center p-2" id="branch">
-        <h3>店舗一覧</h3>
+        <h3>{{ $t('Index.branch') }}</h3>
         <hr>
         <div class="row branch-pc">
           <div class="col-4">
@@ -243,8 +243,8 @@ export default {
   },
   data () {
     return {
-      width: 811,
-      marginLeft: 363,
+      width: 0,
+      marginLeft: 0,
       fullWidth: 0,
       top: 0,
       isSlide: false,
@@ -256,6 +256,10 @@ export default {
   mounted () {
     const vm = this
     vm.fullWidth = window.innerWidth
+    // 設定 main_content寬度
+    vm.width = vm.fullWidth / 2
+    vm.marginLeft = vm.width / 2
+    console.log(vm.width, vm.marginLeft)
     // 改變 main_content寬度
     window.onresize = () => {
       vm.fullWidth = window.innerWidth

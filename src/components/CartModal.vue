@@ -27,7 +27,7 @@
           小計 <span>{{ cartLength }}</span
           >点
         </li>
-        <li class="top-account-cart-total-price">NT ${{ $filters.currency(cart.total) }} 円</li>
+        <li class="top-account-cart-total-price">NT ${{ $filters.currency(cart.total) }} 元</li>
       </ul>
       <p class="top-account-cart-link mb-0">
         <router-link to="/cart" class="top-account-cart-link-a text-center">

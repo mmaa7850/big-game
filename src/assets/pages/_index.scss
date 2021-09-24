@@ -177,9 +177,10 @@
 // main
 .main_container {
   margin-right: auto;
+  padding: 0;
   @include Desktops() {
     margin-left: 0 !important;
-    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 .container_news {
@@ -395,6 +396,10 @@
   background-position: 50%;
   background-size: cover;
   height: 300px;
+  padding: 0;
+  @include Desktops() {
+    margin: 0 30px;
+  }
   @include appleX() {
     background-image: url("~@/assets/images/Gotoshop-sm.png");
     height: 200px;

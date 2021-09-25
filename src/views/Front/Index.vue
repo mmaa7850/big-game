@@ -60,7 +60,7 @@
     <!-- News -->
     <section class="container_news" id="news">
       <div class="important_news py-4 mx-0">
-        <div class="content row align-items-center">
+        <div class="content row align-items-center ">
           <div class="col-5 col-md-3">
             <h2 class="text-danger fw-bolder">
               {{ $t("Index.important-news") }}
@@ -148,7 +148,7 @@
     </section>
     <!-- Information -->
     <section class="info" id="info">
-      <div class="row">
+      <div class="row ">
         <div
           class="col-12 col-md-6 text-center bg-white p-2 align-items-center"
         >
@@ -185,7 +185,7 @@
     <section class="branch mt-5 text-center p-2" id="branch">
       <h3>{{ $t("Index.branch") }}</h3>
       <hr />
-      <div class="row branch-pc">
+      <div class="row branch-pc ">
         <div class="col-4">
           <ul>
             <li>
@@ -284,7 +284,7 @@
     </section>
     <!-- GoToShop-->
     <section class="toshop mt-5">
-      <div class="row mx-0">
+      <div class="row toshop-margin">
         <div
           class="
             col-md-12

@@ -397,9 +397,6 @@
   background-size: cover;
   height: 300px;
   padding: 0;
-  @include Desktops() {
-    margin: 0 30px;
-  }
   @include appleX() {
     background-image: url("~@/assets/images/Gotoshop-sm.png");
     height: 200px;
@@ -423,4 +420,17 @@
 // footer
 footer {
   z-index: 10;
+}
+
+.toshop-margin {
+  margin-left: 25px;
+  margin-right: 25px;
+  @include appleX() {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include apple6() {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }

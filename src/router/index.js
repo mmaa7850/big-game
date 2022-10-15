@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import IndexView from '../views/Front/Index.vue'
 
 const routes = [
   {
@@ -10,8 +9,8 @@ const routes = [
       [
         {
           path: '',
-          name: '',
-          component: IndexView
+          name: 'Home',
+          component: () => import('../views/Front/Index.vue')
         },
         {
           path: 'shop',
@@ -67,7 +66,8 @@ const routes = [
       ]
   },
   {
-    path: '/:pathMatch(.*)*', component: IndexView
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 

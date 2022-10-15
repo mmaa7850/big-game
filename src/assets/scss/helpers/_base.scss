@@ -1,0 +1,65 @@
+body {
+  font-family: HonMinSink-Book JIS2004, serif;
+  background-color: #fafafa;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  letter-spacing: 2px;
+}
+
+.visible {
+  opacity: 0;
+}
+
+.toast-container {
+  z-index: 30;
+}
+
+.centerWrap {
+  max-width: 920px;
+  width: 100%;
+}
+
+.title-font {
+  font-family: DotGothic16, sans-serif;
+  letter-spacing: 1px;
+}
+
+.title-bg {
+  background-color: #59DEE8;
+  border-radius: 50px 0px 0px 0px;
+}

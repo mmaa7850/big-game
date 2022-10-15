@@ -1,0 +1,111 @@
+.order {
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  & h3 {
+    margin: 40px 0px;
+    color: #B30000;
+
+    @include apple6() {
+      font-size: 20px;
+    }
+  }
+
+  & .orderList {
+    border: 1px solid #c8c8c8;
+    margin-top: 40px;
+    padding: 30px 15px;
+
+    @include appleX() {
+      margin-top: 30px;
+    }
+    
+  }
+
+  & .orderList-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 5px;
+
+    @include apple5() {
+      font-size: 14px;
+    }
+
+    @media (max-width: 280px) {
+      font-size: 12px;
+    }
+
+    & .orderList-item-img {
+      padding-left: 6px;
+      padding-right: 0px;
+    }
+  }
+
+  & .orderList-item-title {
+    padding-bottom: 10px;
+  }
+
+  & .orderList-item-amount {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .orderList-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h4 {
+      font-size: 20px;
+
+      @include apple6() {
+        font-size: 16px;
+      }
+
+      @media (max-width: 280px) {
+        font-size: 14px;
+      }
+    }
+
+    & strong {
+      font-size: 24px;
+      color: #B30000;
+
+      @include apple6() {
+        font-size: 20px;
+      }
+
+      @media (max-width: 280px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.orderTable th {
+  font-weight: normal;
+
+  @media (max-width: 280px) {
+    font-size: 12px;
+    padding: 8px 0px;
+  }
+}
+
+.orderTable td {
+  font-weight: 700;
+
+  @include apple6() {
+    font-size: 14px;
+  }
+
+  @media (max-width: 280px) {
+    font-size: 12px;
+  }
+}
+
+.btn {
+  @media (max-width: 280px) {
+    padding: 6px;
+    font-size: 14px;
+  }
+}

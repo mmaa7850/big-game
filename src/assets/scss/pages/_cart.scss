@@ -1,0 +1,394 @@
+.cart {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  min-height: calc(100vh - 176px);
+
+  @include pad() {
+    max-width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+.cartStep {
+  padding-top: 70px;
+
+  @include Desktops() {
+    padding-top: 10px;
+  }
+}
+
+.step {
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+}
+
+.step-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+
+  @include appleX() {
+    font-size: 12px;
+  }
+
+  @media (max-width: 280px) {
+    font-size: 10px;
+  }
+
+  & span {
+    transition: all .2s ease;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.step-item:not(:last-child) {
+  border-right: 1px solid #c8c8c8;
+
+  &::before {
+    content: "";
+    border-right: 1px solid #c8c8c8;
+    border-top: 1px solid #c8c8c8;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -7px;
+    height: 12px;
+    width: 12px;
+    margin-top: -6px;
+    transform: scaleY(.8) rotate(45deg);
+    z-index: 2;
+    transition: all .2s ease;
+  }
+}
+
+.isActive {
+  &::before {
+    background-color: #000;
+  }
+}
+
+.isActive>* {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.cartBasket {
+  margin-top: 40px;
+
+  @include pad() {
+    margin-top: 20px;
+  }
+}
+
+.cartBasket-item:not(:first-child) {
+  margin-top: 3px;
+
+  @include pad() {
+    margin-top: 10px;
+  }
+}
+
+.cartBasketCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  @include pad() {
+    border-bottom: 1px solid #c8c8c8;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+}
+
+.cartBasketCard-image {
+  width: 110px;
+
+  & figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      display: block;
+      height: 0;
+      padding-top: 100%;
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+.cartBasketCard-content {
+  width: calc(100% - 110px);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cartBasketCard-productInfo {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+
+  @include pad() {
+    padding: 10px 10px 5px;
+  }
+
+  @include appleX() {
+    align-items: flex-start;
+  }
+
+  & .cartBasketCard-productName {
+    font-size: 16px;
+    padding: 0px 10px;
+    flex-grow: 1;
+    color: #222;
+
+    @include appleX() {
+      font-size: 14px;
+    }
+
+    @media (max-width: 280px) {
+      padding: 0px;
+    }
+  }
+
+  & .is-desktop {
+    @include appleX() {
+      display: none !important;
+    }
+  }
+
+  & .cartBasketCard-price {
+    padding: 0px 10px;
+    white-space: nowrap;
+
+    @include appleX() {
+      align-self: flex-end;
+    }
+
+    & span {
+      font-size: 18px;
+
+      @include appleX() {
+        font-size: 14px;
+      }
+    }
+  }
+
+  & .cartBasketCard-productNum {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+
+    & .cartBasketCard-select {
+      min-width: 80px;
+      width: auto;
+    }
+  }
+
+  & .cartBasketCard-editor {
+    font-size: 12px;
+    text-align: right;
+
+    & a {
+      text-decoration: underline;
+
+      &:hover {
+        color: #B30000;
+      }
+    }
+  }
+}
+
+.is-column {
+  @include appleX() {
+    flex-direction: column;
+  }
+}
+
+.is-mobile {
+  display: none;
+
+  @include appleX() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 1px;
+  }
+}
+
+
+.cartBasket-subTotal {
+  margin-top: 10px;
+
+  & .subTotal {
+    font-size: 14px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+  }
+
+  & .subTotal-coupon {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #222;
+    padding: 6px 12px;
+    font-size: 16px;
+
+    @media (max-width: 576px) {
+      width: 70%;
+    }
+
+    @include appleX() {
+      width: 60%;
+    }
+
+    @include apple5() {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    @media (max-width: 280px) {
+      padding: 4px;
+      font-size: 10px;
+    }
+  }
+
+  & .subTotal-sendBtn {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #222;
+    transition: .3s;
+
+    &:hover {
+      background-color: #c8c8c8;
+    }
+
+    & img {
+      width: 20px;
+    }
+  }
+
+  & .subTotal-price {
+    text-align: end;
+
+    @include pad() {
+      margin-top: 10px;
+    }
+
+    & span {
+      padding-right: 14px;
+    }
+
+    & strong {
+      font-size: 26px;
+      font-weight: 400;
+
+      @media (max-width: 280px) {
+        font-size: 17px;
+      }
+    }
+  }
+
+  & .font-sm {
+    font-size: 14px;
+
+    @media (max-width: 280px) {
+      font-size: 11px;
+    }
+  }
+}
+
+
+.alertBox {
+  padding: 25px 30px;
+  border: 2px solid #d27156;
+  color: #d27156;
+  background-color: #fff;
+}
+
+
+.cartToShop {
+  margin-top: 50px;
+
+  @include appleX() {
+    margin-top: 30px;
+  }
+}
+
+.cartEmpty {
+  margin-top: 80px;
+}
+
+.cartToShopBtn {
+  margin: 0 auto;
+  max-width: 370px;
+
+  & .btn {
+    @include apple6() {
+      padding: 14px;
+    }
+  }
+}
+
+.cartToShopBtn li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.btn-active {
+  background-color: #B30000;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: all .2s ease;
+}
+
+.btnToShop {
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  color: #000;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: all .2s ease;
+}
+
+.btnInner {
+  @include appleX() {
+    font-size: 14px;
+  }
+}

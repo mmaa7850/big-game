@@ -1,0 +1,139 @@
+{
+  "Index": {
+    "login": "ログイン",
+    "cart": "お買いものかご",
+    "important-news": "重要なお知らせ",
+    "important-news-contentFirst": "一部店舗で",
+    "important-news-contentTime": "時短営業・休業",
+    "important-news-contentLast": "しております。ご了承ください。詳細は",
+    "important-news-contentLast-line": "こちら",
+    "special": "サービス",
+    "news-title": "最新ニュース",
+    "news-title-1": "Ｏliveスマートイヤープラス1週間100円トライアル実施中",
+    "news-content-1": "ビックゲーム有楽町店・立川店にて会話サポートイヤホンの体験申し込みができます。",
+    "news-detail-1": "詳細はこちら",
+    "news-title-2": "ネットで簡単、待ち時間なし「接客予約」サービス【一部店舗限定】",
+    "news-content-2": "ネットで簡単に店舗での接客予約を取ることができます。",
+    "news-detail-2": "接客予約可能店舗はこちら",
+    "news-title-3": "漫画で解説！アプリでタッチを公開しました",
+    "news-content-3": "スマホをかざすだけで、商品レビューなどが簡単に見られる「アプリでタッチ」を漫画で紹介しています。",
+    "news-detail-3": "一部店舗のみ",
+    "info-title": "ゲーム情報",
+    "info-content-1": "【State of Play】で《ゴッド・オブ・ウォー ラグナロク》最新映像を公開した",
+    "info-content-2": "《バイオハザード》シリーズから4作品が“クラウドバージョン”として、Nintendo Switch向けに発売される。",
+    "info-content-3": "《CRISIS CORE -FINAL FANTASY VII- REUNION》の発売日が2022年12月13日に決定いたしました。最新トレーラーも公開",
+    "info-content-4": "Team NINJAによる新作アクションRPG『Rise of the Ronin』が発表された。",
+    "info-content-5": "“極”クオリティで華麗に進化した《龍が如く 維新！ 極》ゲームトレイラー公開！",
+    "info-content-6": "《ホグワーツ・レガシー》PS限定クエスト“呪いのホグズミード店”が配信決定",
+    "info-content-7": "鉄拳シリーズ最新作《鉄拳8》を発表した",
+    "info-content-8": "《ライザのアトリエ3 終わりの錬金術士と秘密の鍵》が2023年2月22日に発売決定！"
+  },
+  "NavBar": {
+    "about": "企業情報",
+    "favorite": "マイリスト",
+    "search-order": "注文を検索",
+    "online-shop": "ネットショップ",
+    "online": "ネット",
+    "shop": "ショップ",
+    "login": "ログイン",
+    "cart": "お買いものかご"
+  },
+  "CartModal": {
+    "cart": "お買いものかごを見る",
+    "unit": "点"
+  },
+  "Favorite": {
+    "favorite": "マイリスト",
+    "favorite-title": "マイリストにはアイテムがありません",
+    "favoriteCancel-button": "削除",
+    "addCart-button": "お買い物かごに追加",
+    "GotoShop": "ネットショップを見る"
+  },
+  "Shop": {
+    "online-shop": "ネットショップ",
+    "all": "すべて"
+  },
+  "Product": {
+    "product-info": "商品情報",
+    "product-button": "お買い物かごに追加",
+    "productUnit": "個数",
+    "productNum-1": "1点",
+    "productNum-2": "2点",
+    "productNum-3": "3点",
+    "productNum-4": "4点",
+    "productNum-5": "5点",
+    "productNum-6": "6点",
+    "productNum-7": "7点",
+    "productNum-8": "8点",
+    "productNum-9": "9点",
+    "productNum-10": "10点",
+    "favoriteAdd-button": "リストに追加",
+    "favoriteCancel-button": "削除",
+    "shopping-info": "返品・交換について",
+    "shopping-content": "お客様のご都合による返品・交換はお受けいたしかねますので、あらかじめご了承ください",
+    "delivery-info": "配達について",
+    "delivery-content": "配送方法は全て宅配便を利用致します。マークされた商品以外全て常温便でございます。お届け時ご不在だった場合、翌日にまた再配送致します。2回以上不在の場合は、お電話とE-MAILでご連絡させて頂きます。ご連絡取れなかった際に当注文はキャンセルさせて、ご返金致します。",
+    "deliveryTime-info": "配達時間について",
+    "deliveryTime-content": "年中無休、国内24時間内お届け致します。"
+  },
+  "ProductSwiper": {
+    "title": "おすすめ商品",
+    "Swiper-button": "商品を見る"
+  },
+  "Cart": {
+    "step-title-1": "お買い物かご",
+    "step-title-2": "ご注文内容の入力",
+    "step-title-3": "ご注文完了",
+    "cart": "お買い物かご",
+    "del": "消除",
+    "mobileTitle": "お買い物かごに商品が入っていません。",
+    "toDetail": "ご注文手続きに進む",
+    "try-coupon": "Big Gameを試しで見ようか",
+    "toShop": "他の商品を探す"
+  },
+  "Detail": {
+    "formTitle": "ご注文内容の入力",
+    "name": "お名前",
+    "tel": "電話番号",
+    "email": "Email",
+    "address": "お届け先",
+    "note": "連絡事項",
+    "listTitle": "ご注文商品",
+    "listPrice": "総合計金額",
+    "backToCart": "お買い物かごへ戻る",
+    "toCheckout": "確定する",
+    "formName": "お名前を入力",
+    "formPhone": "お電話番号を入力",
+    "formAddress": "お届け先",
+    "formTextArea": "こちらにお問い合わせ内容を入力してください",
+    "sendSubmit": "入力内容を確認する"
+  },
+  "Order": {
+    "title": "ご注文いただき誠にありがとうございます！",
+    "tableTitle": "こちらは発注書でございます",
+    "createTime": "注文時点",
+    "name": "お名前",
+    "tel": "お電話番号",
+    "address": "お届け先",
+    "note": "連絡事項",
+    "is_paid": "支払いステータス",
+    "not_paid": "未支払い",
+    "paid": "支払い済",
+    "toPaid": "ご購入手続き",
+    "id": "注文番号"
+  },
+  "SearchOrder": {
+    "search-order": "注文を検索",
+    "enter-order": "注文番号を入力してください",
+    "search": "検索"
+  },
+  "Footer": {
+    "address": "店舗住所：東京都豊島区東池袋1-41-5",
+    "tel": "連絡先番号：",
+    "open-time": "営業時間：年中無休 10:00 ～ 22:00"
+  },
+  "Login": {
+    "login": "ログイン",
+    "password": "パスワード"
+  }
+}

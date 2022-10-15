@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./helpers/base";
+@import "./helpers/btn";
+@import "./helpers/grid";
+@import "./helpers/footer";
+
+@import "./pages/navBar";
+@import "./pages/index";
+@import "./pages/shop";
+@import "./pages/product";
+@import "./pages/cart";
+@import "./pages/detail";
+@import "./pages/order";
+@import "./pages/favorite";
+@import "./pages/searchOrder";

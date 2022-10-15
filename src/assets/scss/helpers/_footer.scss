@@ -1,0 +1,86 @@
+.footer {
+
+  & .footerInfo {
+
+    & .footerInfo-content {
+      padding-top: 12px;
+
+      & p {
+        margin-bottom: 0px;
+        padding: 10px 0px;
+
+        @media (max-width: 280px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    & img {
+      width: 150px;
+      margin-right: 15px;
+      padding-bottom: 15px;
+
+      @include Desktops() {
+        padding-top: 10px;
+      }
+    }
+
+    & .icon {
+      font-size: 28px;
+      padding: 10px;
+    }
+
+    & .twitter {
+      &:hover {
+        color: #1da1f2;
+      }
+    }
+
+    & .facebook {
+      &:hover {
+        color: #1877f2;
+      }
+    }
+
+    & .line {
+      &:hover {
+        color: #00c300;
+      }
+    }
+
+    & .instagram {
+      &:hover {
+        color: #e1306c;
+      }
+    }
+  }
+
+  & .copyRight {
+    padding-top: 12px;
+    font-size: 12px;
+
+    & p {
+      margin-bottom: 0px;
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+
+  & .reverse {
+    @include Desktops() {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  & .map {
+    @include Desktops() {
+      padding-top: 10px;
+    }
+
+    @include appleX() {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}

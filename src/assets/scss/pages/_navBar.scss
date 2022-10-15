@@ -1,0 +1,154 @@
+#header {
+  width: 183px;
+  position: fixed;
+  top: 45px;
+  left: 30px;
+  visibility: visible;
+  z-index: 10;
+
+  @include Desktops() {
+    display: none !important;
+  }
+}
+
+.nav-list {
+  font-family: "DotGothic16", sans-serif;
+
+  & li {
+    margin-bottom: 5px;
+    line-height: 35px;
+    transition: all .3s ease;
+
+    &:hover {
+      cursor: pointer;
+      font-size: 18px;
+    }
+  }
+}
+
+.nav-lang {
+  & a {
+    font-size: 12px;
+  }
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: none;
+  z-index: 10;
+
+  @include Desktops() {
+    display: block;
+  }
+
+  & .navbar--sm {
+    display: flex;
+    align-items: center;
+
+    & .navbar-toggler {
+      color: #000;
+    }
+  }
+
+  & .navbar-nav {
+    & .nav-item {
+      width: 100%;
+      border-bottom: 1px solid #000;
+
+      & .nav-link {
+        padding: 20px 20px;
+        color: #000;
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+#ShopNavBar {
+  background-color: #fff;
+  padding: 20px 10px 20px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  border-bottom: 1px solid #000;
+
+  @include Desktops() {
+    display: none;
+  }
+
+  & .top-account-aside-cart {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  & .account-pc {
+    width: 345px;
+    overflow: hidden;
+    transition: .3s ease;
+
+    @media(max-width: 1150px) {
+      padding-left: 100px;
+    }
+
+    & .account-hide-withoutCart {
+      @media(max-width: 1150px) {
+        max-width: 37px;
+      }
+    }
+
+    & .account-hide-withCart {
+      @media(max-width: 1150px) {
+        max-width: 50px;
+      }
+    }
+
+    @include Desktops() {
+      display: none;
+    }
+  }
+
+  & #navbarNav {
+    & .nav-lang a {
+      padding: 16px 10px 4px 10px;
+    }
+
+    & span {
+      @media(max-width: 1150px) {
+        display: none;
+      }
+    }
+
+    @include Desktops() {
+      display: none;
+    }
+  }
+
+  & .nav-link {
+    padding: 10px;
+    color: #222;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 2px solid #000;
+    }
+  }
+}
+
+.adminNavbar-nav .nav-link {
+  &:focus {
+    color: #B30000 !important;
+  }
+
+  &:hover {
+    color: #B30000 !important;
+  }
+}

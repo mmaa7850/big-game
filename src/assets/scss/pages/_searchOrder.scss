@@ -1,0 +1,56 @@
+.SearchOrder {
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  & .orderList {
+    border: 1px solid #c8c8c8;
+    padding: 30px 15px;
+    margin-top: 40px;
+  }
+
+  & .orderList-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 5px;
+  }
+
+  & .orderList-item-title {
+    padding-bottom: 10px;
+  }
+
+  & .orderList-item-amount {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .orderList-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h4 {
+      font-size: 20px;
+
+      @include apple6() {
+        font-size: 16px;
+      }
+
+      @media (max-width: 280px) {
+        font-size: 14px;
+      }
+    }
+
+    & strong {
+      font-size: 24px;
+      color: #B30000;
+
+      @include apple6() {
+        font-size: 20px;
+      }
+
+      @media (max-width: 280px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

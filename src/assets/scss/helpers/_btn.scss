@@ -1,0 +1,46 @@
+.I-btn {
+  border-radius: 25px;
+}
+
+.backBtn {
+  background-color: $white;
+  color: #59DEE8;
+
+  &:hover {
+    background-color: #59DEE8;
+    color: $white;
+  }
+}
+
+.btnToCart {
+  background-color: #fff;
+  border: 1px solid #B30000;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: all .2s ease;
+
+  &:hover {
+    background-color: #B30000;
+    color: #fff;
+  }
+}
+
+.checkoutBtn {
+  background-color: #fff;
+  border: 1px solid #B30000;
+
+  &:hover {
+    background-color: #B30000;
+    color: #fff;
+  }
+}
+
+.toShopBtn {
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+
+  &:hover {
+    background-color: #c8c8c8;
+  }
+}

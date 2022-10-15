@@ -1,0 +1,47 @@
+@mixin extraDesktops {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin largeDesktops {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mdDesktops {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin Desktops {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin appleX {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin apple6 {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin apple5 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

@@ -1,25 +1,85 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import { createRouter, createWebHashHistory } from 'vue-router'
+import IndexView from '../views/Front/Index.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView,
+    name: 'Home',
+    component: () => import('../views/Front/Home.vue'),
+    children:
+      [
+        {
+          path: '',
+          name: '',
+          component: IndexView
+        },
+        {
+          path: 'shop',
+          component: () => import('../views/Front/Shop.vue')
+        },
+        {
+          path: 'products/:productId',
+          component: () => import('../views/Front/Product.vue')
+        },
+        {
+          path: 'favorite',
+          component: () => import('../views/Front/Favorite.vue')
+        },
+        {
+          path: 'cart',
+          component: () => import('../views/Front/Cart.vue')
+        },
+        {
+          path: 'detail',
+          component: () => import('../views/Front/Detail.vue')
+        },
+        {
+          path: 'order/:id',
+          component: () => import('../views/Front/Order.vue')
+        },
+        {
+          path: 'searchOrder',
+          component: () => import('../views/Front/SearchOrder.vue')
+        }
+      ]
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    path: '/admin',
+    component: () => import('../views/Admin/DashBoard.vue'),
+    children:
+      [
+        {
+          path: 'login',
+          component: () => import('../views/Admin/Login.vue')
+        },
+        {
+          path: 'products',
+          component: () => import('../views/Admin/Products.vue')
+        },
+        {
+          path: 'order',
+          component: () => import('../views/Admin/Order.vue')
+        },
+        {
+          path: 'coupon',
+          component: () => import('../views/Admin/Coupons.vue')
+        }
+      ]
   },
-];
+  {
+    path: '/:pathMatch(.*)*', component: IndexView
+  }
+]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
-});
+  linkActiveClass: 'active',
+  routes
+})
 
-export default router;
+router.beforeEach((to, from, next) => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  next()
+})
+
+export default router

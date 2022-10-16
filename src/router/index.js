@@ -12,11 +12,6 @@ const routes = [
     component: () => import('../views/Front/Home.vue'),
     children:
       [
-        // {
-        //   path: '',
-        //   name: 'Home',
-        //   component: () => import('../views/Front/Index.vue')
-        // },
         {
           path: 'shop',
           component: () => import('../views/Front/Shop.vue')

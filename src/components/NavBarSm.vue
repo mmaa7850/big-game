@@ -75,6 +75,7 @@
 
 <script>
 import { useI18n } from 'vue-i18n'
+import emitter from '@/methods/emitter'
 
 export default {
   data () {
@@ -82,12 +83,9 @@ export default {
       isShow: false,
       top: 0,
       isSlide: false,
-      locale: useI18n()
+      locale: useI18n(),
+      cartLength: 0
     }
-  },
-  props: {
-    cartLength: Number,
-    msg: String
   },
   mounted () {
     window.addEventListener('scroll', this.handleScroll)
@@ -116,6 +114,11 @@ export default {
     handleChangeLanguage (lang) {
       this.locale.locale = lang
     }
+  },
+  created () {
+    emitter.on('updateCartLength', (cartLength) => {
+      this.cartLength = cartLength
+    })
   },
   unmounted () {
     window.removeEventListener('scroll', this.handleScroll)

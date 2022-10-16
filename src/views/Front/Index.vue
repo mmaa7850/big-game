@@ -29,7 +29,7 @@
         </li>
       </ul>
     </div>
-    <CartModal :cart="cart" :cartLength="cartLength" :hide="hide"/>
+    <CartModal :hide="hide"/>
   </div>
   <NavBarSm :cartLength="cartLength"/>
   <IndexSwiper @slide="slideDown"/>
@@ -207,6 +207,7 @@ import IndexSwiper from '@/components/IndexSwiper.vue'
 import CartModal from '@/components/CartModal.vue'
 import SimpleProductSwiper from '@/components/SimpleProductSwiper.vue'
 import Footer from '@/components/Footer.vue'
+import emitter from '@/methods/emitter'
 
 export default {
   components: {
@@ -281,6 +282,8 @@ export default {
       this.$http.get(url).then((response) => {
         this.cart = response.data.data
         this.cartLength = this.cart.carts.length
+        emitter.emit('updateCart', this.cart)
+        emitter.emit('updateCartLength', this.cartLength)
         this.isLoading = false
       }).catch((error) => {
         this.$httpMessageState(error, '錯誤訊息')

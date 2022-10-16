@@ -1,7 +1,4 @@
 <template>
-  <Loading :active="isLoading"/>
-  <ShopNavBar :cartLength="cartLength" :cart="cart"/>
-  <NavBarSm :cartLength="cartLength"/>
   <div class="container pb-4">
     <div id="product" class="row pb-3">
       <div class="col-lg-7 product_video">
@@ -54,15 +51,12 @@
 </template>
 
 <script>
-import ShopNavBar from '@/components/ShopNavBar.vue'
-import NavBarSm from '@/components/NavBarSm.vue'
 import ProductSwiper from '@/components/ProductSwiper.vue'
 import Footer from '@/components/Footer.vue'
+import emitter from '@/methods/emitter'
 
 export default {
   components: {
-    ShopNavBar,
-    NavBarSm,
     ProductSwiper,
     Footer
   },
@@ -81,7 +75,6 @@ export default {
       player: null,
       product: [],
       products: [],
-      isLoading: false,
       cart: {},
       cartLength: 0,
       favoriteList: JSON.parse(localStorage.getItem('favoriteList')) || []
@@ -119,6 +112,8 @@ export default {
       this.$http.get(url).then((response) => {
         this.cart = response.data.data
         this.cartLength = this.cart.carts.length
+        emitter.emit('updateCart', this.cart)
+        emitter.emit('updateCartLength', this.cartLength)
         this.isLoading = false
       }).catch((error) => {
         this.$httpMessageState(error, '錯誤訊息')

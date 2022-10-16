@@ -1,7 +1,4 @@
 <template>
-  <Loading :active="isLoading"/>
-  <ShopNavBar :cartLength="cartLength" :cart="cart"/>
-  <NavBarSm :cartLength="cartLength"/>
   <div class="container detail">
     <div class="cartStep">
       <div class="centerWrap mx-auto">
@@ -47,7 +44,7 @@
         </div>
         <div class="text-end">
           <router-link to="/cart" class="btn btn-outline-primary me-3 backBtn">{{ $t('Detail.backToCart') }}</router-link>
-          <button class="btn btn-danger" type="button">{{ $t('Detail.toCheckout') }}</button>
+          <button class="btn btn-danger" type="submit">{{ $t('Detail.toCheckout') }}</button>
         </div>
       </Form>
       <div class="col-md-5">
@@ -82,14 +79,11 @@
 </template>
 
 <script>
-import ShopNavBar from '@/components/ShopNavBar.vue'
-import NavBarSm from '@/components/NavBarSm.vue'
 import Footer from '@/components/Footer.vue'
+import emitter from '@/methods/emitter'
 
 export default {
   components: {
-    ShopNavBar,
-    NavBarSm,
     Footer
   },
   data () {
@@ -110,11 +104,13 @@ export default {
   },
   methods: {
     getCart () {
+      const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/cart`
       this.isLoading = true
-      const api = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/cart`
-      this.$http.get(api).then((res) => {
-        this.cart = res.data.data
+      this.$http.get(url).then((response) => {
+        this.cart = response.data.data
         this.cartLength = this.cart.carts.length
+        emitter.emit('updateCart', this.cart)
+        emitter.emit('updateCartLength', this.cartLength)
         this.isLoading = false
       }).catch((error) => {
         this.$httpMessageState(error, '錯誤訊息')

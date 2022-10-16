@@ -58,27 +58,25 @@
         </li>
       </ul>
     </div>
-    <CartModal :hide="hide" :cart="cart" :cartLength="cartLength"/>
+    <CartModal :hide="hide"/>
   </nav>
 </template>
 
 <script>
 import CartModal from '@/components/CartModal.vue'
+import emitter from '@/methods/emitter'
 import { useI18n } from 'vue-i18n'
 
 export default {
   components: {
     CartModal
   },
-  props: {
-    cartLength: Number,
-    cart: Object,
-    msg: String
-  },
   data () {
     return {
       hide: true,
-      locale: useI18n()
+      locale: useI18n(),
+      cart: {},
+      cartLength: 0
     }
   },
   methods: {
@@ -104,6 +102,14 @@ export default {
       } else {
         vm.hide = true
       }
+    })
+  },
+  created () {
+    emitter.on('updateCart', (cart) => {
+      this.cart = cart
+    })
+    emitter.on('updateCartLength', (cartLength) => {
+      this.cartLength = cartLength
     })
   },
   unmounted () {

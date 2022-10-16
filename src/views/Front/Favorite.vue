@@ -1,7 +1,4 @@
 <template>
-  <Loading :active="isLoading"/>
-  <ShopNavBar :cartLength="cartLength" :cart="cart"/>
-  <NavBarSm :cartLength="cartLength"/>
   <Swiper/>
   <div class="container favorite">
     <h1 class="fs-2 text-center fw-bold title-font" v-if="favoriteData.length !== 0">{{ $t("Favorite.favorite") }}</h1>
@@ -34,15 +31,12 @@
 </template>
 
 <script>
-import ShopNavBar from '@/components/ShopNavBar.vue'
-import NavBarSm from '@/components/NavBarSm.vue'
 import Swiper from '@/components/Swiper.vue'
 import Footer from '@/components/Footer.vue'
+import emitter from '@/methods/emitter'
 
 export default {
   components: {
-    ShopNavBar,
-    NavBarSm,
     Swiper,
     Footer
   },
@@ -76,6 +70,8 @@ export default {
       this.$http.get(url).then((response) => {
         this.cart = response.data.data
         this.cartLength = this.cart.carts.length
+        emitter.emit('updateCart', this.cart)
+        emitter.emit('updateCartLength', this.cartLength)
         this.isLoading = false
       }).catch((error) => {
         this.$httpMessageState(error, '錯誤訊息')

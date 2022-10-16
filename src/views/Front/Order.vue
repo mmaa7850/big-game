@@ -1,7 +1,4 @@
 <template>
-  <Loading :active="isLoading"/>
-  <ShopNavBar :cartLength="cartLength" :cart="cart"/>
-  <NavBarSm :cartLength="cartLength"/>
   <div class="container order">
     <div class="cartStep">
       <div class="centerWrap mx-auto">
@@ -99,14 +96,11 @@
 </template>
 
 <script>
-import ShopNavBar from '@/components/ShopNavBar.vue'
-import NavBarSm from '@/components/NavBarSm.vue'
 import Footer from '@/components/Footer.vue'
+import emitter from '@/methods/emitter'
 
 export default {
   components: {
-    ShopNavBar,
-    NavBarSm,
     Footer
   },
   data () {
@@ -147,6 +141,8 @@ export default {
         if (res.data.success) {
           this.isLoading = false
           this.order = res.data.order
+          emitter.emit('updateCart', this.cart)
+          emitter.emit('updateCartLength', this.cartLength)
           this.isState = res.data.order.is_paid
         }
       }).catch((error) => {

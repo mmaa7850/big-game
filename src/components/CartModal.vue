@@ -29,12 +29,24 @@
 </template>
 
 <script>
+import emitter from '@/methods/emitter'
+
 export default {
-  props: ['cart', 'cartLength', 'hide'],
+  props: ['hide'],
   data () {
     return {
-      close: true
+      close: true,
+      cart: {},
+      cartLength: 0
     }
+  },
+  created () {
+    emitter.on('updateCart', (cart) => {
+      this.cart = cart
+    })
+    emitter.on('updateCartLength', (cartLength) => {
+      this.cartLength = cartLength
+    })
   }
 }
 </script>
